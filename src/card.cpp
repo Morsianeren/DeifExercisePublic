@@ -1,5 +1,9 @@
 #include "../include/card.h"
 
+std::unordered_map<int, std::string> Card::number_to_suit = {
+    {1, "Red"}, {2, "Blue"}, {3, "Green"}, {4, "Yellow"}
+};
+
 Card::Card() : suit(GetRandomSuit()), card_number(GetRandomCardNumber()){
   value_ = suit * card_number;
 }
@@ -22,6 +26,7 @@ int Card::GetRandomCardNumber() {
 }
 
 std::ostream& operator<<(std::ostream& os, const Card& card) {
-    os << card.suit << card.card_number;
+    std::string suit_str = Card::number_to_suit[card.suit];
+    os << suit_str << " " << card.card_number;
     return os;
 }
