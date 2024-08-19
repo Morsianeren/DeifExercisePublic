@@ -65,4 +65,4 @@ The implementation follows the sequence diagrams created in exercise 2, and the 
 
 ### Example 
 
-INSERT GIF HERE
+![Demo gif](assets/Demo.gif)
