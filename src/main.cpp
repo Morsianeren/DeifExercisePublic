@@ -21,8 +21,15 @@ int main() {
     }
   } while (player_name != "done");
 
+
+
   // Initialize deck
-  Deck deck(52);
+  std::cout << "Please enter how many cards each player should get: ";
+  int number_of_cards;
+  std::cin >> number_of_cards;
+  
+  // TODO: Add deck as a member of the Game class
+  Deck deck(players.capacity() * number_of_cards);
 
   // Initialize game
   Game game(&deck);
@@ -33,10 +40,7 @@ int main() {
   }
 
   // Start game
-  game.StartGame(5);
-
-  // Announce winner
-  game.AnnounceWinner();
+  game.StartGame(number_of_cards);
 
   // Show hands
   for (Player* player : players) {
@@ -48,6 +52,9 @@ int main() {
     }
     std::cout << " for a total of " << points << " points.\n";
   }
+
+  // Announce winner
+  game.AnnounceWinner();
 
   // Clean up
   for (Player* player : players) {
