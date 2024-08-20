@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" modified="2024-08-20T06:56:15.957Z" version="21.6.8" etag="w2ZEdHvi3h1MwOU_9JEz" type="device">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" modified="2024-08-20T06:59:06.608Z" etag="eGpw_CBpvLQt8qX1VPL8" version="21.6.8" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1182" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,7 +75,7 @@
         <mxCell id="5LrNecoHu0j48pfcUCZS-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="5LrNecoHu0j48pfcUCZS-1" vertex="1">
           <mxGeometry y="78" width="171" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="5LrNecoHu0j48pfcUCZS-5" value="+ AddPlayer(p: Player): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5LrNecoHu0j48pfcUCZS-1" vertex="1">
+        <mxCell id="5LrNecoHu0j48pfcUCZS-5" value="+ AddPlayer(p: Player*): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5LrNecoHu0j48pfcUCZS-1" vertex="1">
           <mxGeometry y="86" width="171" height="26" as="geometry" />
         </mxCell>
         <mxCell id="5LrNecoHu0j48pfcUCZS-6" value="+ StartGame(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5LrNecoHu0j48pfcUCZS-1" vertex="1">
