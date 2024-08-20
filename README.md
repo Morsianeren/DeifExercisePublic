@@ -52,7 +52,11 @@ Lastly, the game will end and evaluate the players.
 
 ![sd Determine winner](assets/sd%20Determine%20winner.drawio.svg)
 
-In the future, it might make sense to create an interface for the Game class so that different game modes could be implemented without significant changes to the code in the main method.
+A problem with this design is that the Deck is initialized outside the Game, even though it is only used here. To solve this I have designed a new domain model, where the Game class becomes an interface. This way it is possible to easily implement different gamemodes, and implement specific functionality for the different modes.
+
+![Extended domain model](assets/Extended%20domain%20diagram.drawio.svg)
+
+Note that functions written in *italic* are abstract. This means that the CardGame class must implement StartGame() and DetermineWinner(). The CardGame class must also set its settings, that later can be get and set in the user interface.
 
 ## Exercise 3
 Implement your game and test it
@@ -61,7 +65,7 @@ For the style, I follow Google's public style guide: [link](https://google.githu
 
 I have included a Makefile to compile this project on both Windows and Linux. Simply run `make` in your CLI.
 
-The implementation follows the sequence diagrams created in Exercise 2, and the classes are the same as those in the Domain diagram.
+The implementation follows the sequence diagrams created in exercise 2, and the classes are the same as those in the Domain model in exercise 1.
 
 ### Example 
 
