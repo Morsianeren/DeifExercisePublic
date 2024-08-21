@@ -56,7 +56,7 @@ A problem with this design is that the Deck is initialized outside the Game, eve
 
 ![Extended domain model](assets/Extended%20domain%20diagram.drawio.svg)
 
-Note that functions written in *italic* are abstract. This means that the CardGame class must implement StartGame() and DetermineWinner(). The CardGame class must also set its settings, that later can be get and set in the user interface.
+Note that functions written in *italic* are abstract. This means that the CardGame class must implement StartGame() and DetermineWinner(). The CardGame class must also set its settings, that later can be get and set by whatever user interface will be implemented. <ins>This also means that how many cards each player should get can be defined here.</ins>
 
 ## Exercise 3
 Implement your game and test it
@@ -65,7 +65,7 @@ For the style, I follow Google's public style guide: [link](https://google.githu
 
 I have included a Makefile to compile this project on both Windows and Linux. Simply run `make` in your CLI.
 
-The implementation follows the sequence diagrams created in exercise 2, and the classes are the same as those in the Domain model in exercise 1.
+The implementation follows the sequence diagrams created in exercise 2, and the classes are the same as those in the Domain model in exercise 1. I have chosen not to implement the extended domain diagram, because of my limited time to do this assignment.
 
 ### Example 
 
