@@ -29,7 +29,7 @@ int main() {
   std::cin >> number_of_cards;
   
   // TODO: Add deck as a member of the Game class
-  Deck deck(players.capacity() * number_of_cards);
+  Deck deck(players.size() * number_of_cards);
 
   // Initialize game
   Game game(&deck);
